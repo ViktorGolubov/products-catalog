@@ -19,10 +19,7 @@ public class ProductCatalog {
 
             if(line.equals("exit")) {
                 break;
-            }
-
-            if (line.equals("add")) {
-
+            } else if (line.equals("add")) {
 
                 System.out.print("Product name? ");
                 String name = input.nextLine();
