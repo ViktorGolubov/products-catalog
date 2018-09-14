@@ -35,21 +35,23 @@ public class ProductCatalog {
 
                 Product product = new Product( name, price,units);
 
-                System.out.println(product);
+                products.add(product);
 
+                System.out.println(product);
                 System.out.println("Product is added");
 
             }
 
             if (line.equals("list")) {
 
+                for (int i = 0; i < products.size(); i++){
+                    Product product = products.get(i);
+                    System.out.println(product);
 
+                }
             }
-            System.out.println("Action done!");
-
 
         }
-
 
     }
 }
